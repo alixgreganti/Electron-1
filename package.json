@@ -1,0 +1,33 @@
+{
+  "name": "lazy-mans-viewer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.alixgreganti.lazy-mans-viewer",
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true
+    },
+    "directories": {
+      "buildResources": "resources",
+      "output": "release"
+    }
+  },
+  "devDependencies": {
+    "electron": "^13.1.0",
+    "electron-builder": "^23.6.0",
+    "electron-packager": "^17.1.1"
+  }
+}
