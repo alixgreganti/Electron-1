@@ -7,8 +7,14 @@
     "start": "electron .",
     "build": "electron-builder"
   },
+  "repository": "https://github.com/alixgreganti/lazy-mans-viewer",
+  "publish": {
+    "provider": "github",
+    "releaseType": "release"
+  },
   "build": {
     "appId": "com.alixgreganti.lazy-mans-viewer",
+    "productName": "Lazy mans Viewer",
     "win": {
       "target": [
         "nsis"
@@ -26,7 +32,7 @@
     }
   },
   "devDependencies": {
-    "electron": "^13.1.0",
+    "electron": "^13.6.9",
     "electron-builder": "^23.6.0",
     "electron-packager": "^17.1.1"
   }
